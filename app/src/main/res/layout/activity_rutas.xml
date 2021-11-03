@@ -10,7 +10,7 @@
         android:id="@+id/inputLatitudRuta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="96dp"
         android:ems="10"
         android:hint="Latitud"
         android:inputType="numberDecimal"
@@ -36,11 +36,11 @@
         android:id="@+id/btnBorrarRuta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:onClick="onClickBorrarRuta"
+        android:layout_marginTop="48dp"
+        android:onClick="BorrarRuta"
         android:text="Borrar"
         app:layout_constraintEnd_toStartOf="@+id/btnGuardarRuta"
-        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputLongitudRuta" />
 
@@ -48,10 +48,20 @@
         android:id="@+id/btnGuardarRuta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="92dp"
-        android:onClick="onClickGuardarRuta"
+        android:onClick="GuardarRuta"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputLongitudRuta" />
+
+    <TextView
+        android:id="@+id/coordenadasGuardadas"
+        android:layout_width="349dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBorrarRuta" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
